@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity implements
                 .replace(R.id.fragment_container, details)
                 .commit();
 
-
         // Start the fragment transaction
         // FragmentTransaction ft = getFragmentManager().beginTransaction();
         // Replace the fragment and add it to the back stack
