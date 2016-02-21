@@ -26,9 +26,8 @@ public class WorkoutListFragment extends ListFragment {
 
     private WorkoutListListener listener;
 
-
     // Here we create a basic list fragment called WorkoutListFragment.
-    // As it’s a list fragment, it needs to extend the ListFragment class rather than Fragment.
+    // As it’s a list fragment, it needs to extend the ListFragment class.
     // The onCreateView() method gets called when the fragment’s view gets created. We’re
     // including it in our code as we want to populate the fragment’s list view  with data as
     // soon as it gets created. If you don’t need your code to do anything at this point, you
@@ -75,6 +74,6 @@ public class WorkoutListFragment extends ListFragment {
             //Tell the listener when an item in the ListView is clicked
             listener.itemClicked(id);
         }
-        // super.onListItemClick(l, v, position, id);
+
     }
 }

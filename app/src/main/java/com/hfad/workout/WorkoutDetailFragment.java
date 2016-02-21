@@ -24,7 +24,8 @@ public class WorkoutDetailFragment extends Fragment {
 
 
     @Override
-    // This is the onCreateView() method. It’s called when Android needs the fragment’s layout.
+    // This is the onCreateView() method.
+    // It’s called when Android needs the fragment’s layout.
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
