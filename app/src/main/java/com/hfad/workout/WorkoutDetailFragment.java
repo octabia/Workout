@@ -28,8 +28,21 @@ public class WorkoutDetailFragment extends Fragment {
     // It’s called when Android needs the fragment’s layout.
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        if (savedInstanceState != null) {
+            //    Set the value of the workoutId
+            workoutId = savedInstanceState.getLong("workoutId");
+        }
+
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_workout_detail, container, false);
+    }
+
+    // Save the value of the workoutId in the fragment gets destroyed.
+    // We're retrieving it in the onCreateView() method.
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        savedInstanceState.putLong("workoutId", workoutId);
     }
 
     @Override
