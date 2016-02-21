@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements
         // activity’s layout is detail_frag
         // use getSupportFragmentManager() instead getFragmentManager(),
         // but this only works for ActionBarActivites
+        
         WorkoutDetailFragment frag = (WorkoutDetailFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.detail_frag);
 
